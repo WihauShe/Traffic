@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".module.LoginActivity">
+        <TableRow android:layout_marginStart="60dp" android:layout_marginTop="20dp">
+            <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/name"/>
+            <EditText
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="请输入手机号"
+                    android:maxLines="1"
+                    android:id="@+id/username"/>
+        </TableRow>
+        <TableRow android:layout_marginStart="60dp" android:layout_marginTop="20dp">
+            <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/password"/>
+            <EditText
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:hint="请输入密码"
+                    android:maxLines="1"
+                    android:id="@+id/userpass"/>
+        </TableRow>
+        <TableRow android:layout_marginStart="100dp" android:layout_marginTop="20dp">
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="登录"
+                    android:textColor="@color/colorPrimary"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:id="@+id/login_btn"/>
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="70dp"
+                    android:text="取消"
+                    android:textColor="@color/colorPrimary"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:id="@+id/cancel_btn"/>
+        </TableRow>
+</TableLayout>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Traffic</string>
+    <string-array name="headimgs">
+        <item>头像1</item>
+        <item>头像2</item>
+        <item>头像3</item>
+        <item>头像4</item>
+        <item>头像5</item>
+        <item>头像6</item>
+        <item>头像7</item>
+        <item>头像8</item>
+        <item>头像9</item>
+    </string-array>
+    <string-array name="usersex">
+        <item></item>
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+</resources>

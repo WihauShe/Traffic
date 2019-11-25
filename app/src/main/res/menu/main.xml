@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="关于" android:id="@+id/about_menu"/>
+    <item android:title="更换背景" android:id="@+id/back_menu"/>
+    <item android:title="开启/关闭背景音乐" android:id="@+id/music_menu"/>
+</menu>

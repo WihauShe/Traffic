@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="cn.cslg.traffic">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+        <activity android:name=".module.LoginActivity">
+        </activity>
+        <activity android:name=".module.ShowStepActivity">
+        </activity>
+        <activity android:name=".module.TransferActivity">
+        </activity>
+        <activity android:name=".module.RouteActivity">
+        </activity>
+        <activity android:name=".module.StationActivity">
+        </activity>
+        <activity android:name=".module.ChooseCityActivity">
+        </activity>
+        <activity android:name=".module.RegisterActivity">
+        </activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <provider
+                android:name=".dao.MyProvider"
+                android:authorities="cn.cslg.traffic.dao.MyProvider"
+                android:exported="true"/>
+        <service android:name="cn.cslg.traffic.fragment.MusicService"/>
+    </application>
+
+</manifest>
